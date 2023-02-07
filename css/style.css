@@ -1,3 +1,13 @@
 nav {
   background-color: #30365a;
 }
+
+.card {
+  background-color: #30365a;
+}
+.card a {
+  color: white;
+}
+.card a:hover {
+  color: white;
+}
