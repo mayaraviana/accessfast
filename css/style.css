@@ -17,4 +17,10 @@ nav {
 
 .btn-primary {
   background-color: #30365a;
+  border: #30365a;
+}
+
+.btn-primary:hover {
+  background-color: #242a50;
+  border: #242a50;
 }
