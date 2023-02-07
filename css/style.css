@@ -11,3 +11,10 @@ nav {
 .card-inicio a:hover {
   color: white;
 }
+.badge-primary {
+  background-color: #30365a;
+}
+
+.btn-primary {
+  background-color: #30365a;
+}
