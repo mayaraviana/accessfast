@@ -2,12 +2,12 @@ nav {
   background-color: #30365a;
 }
 
-.card {
+.card-inicio {
   background-color: #30365a;
 }
-.card a {
+.card-inicio a {
   color: white;
 }
-.card a:hover {
+.card-inicio a:hover {
   color: white;
 }
