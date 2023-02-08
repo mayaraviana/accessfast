@@ -16,17 +16,17 @@ body{
     height: 0px;
   }
   &::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,.24);
+    background: var(--primaria-regular);
     border: 0px none #ffffff;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,.48)
+    background: var(--primaria-regular);
   }
   &::-webkit-scrollbar-thumb:active {
-    background: rgba(255,255,255,.48)
+    background: var(--primaria-regular);
   }
   &::-webkit-scrollbar-track {
-    background: var(--primaria-regular);
+    background: var(--primaria-light);
     border: 0px none #ffffff;
   }
   
@@ -35,10 +35,6 @@ body{
   }
 }
 
-nav {
-  background-color: var(--primaria-regular);
-  height: 64px;
-}
 
 .fix-nav-top{ margin-top: 64px;}
 

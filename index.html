@@ -8,10 +8,10 @@
     <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="fix-nav-top">
     <!--INICIO NAVBAR-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand col-3" href="index.html">
         <img src="./img/logo.svg" alt="logo" />
       </a>
       <button
@@ -26,8 +26,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html"
               >Início <span class="sr-only">(current)</span></a
@@ -47,6 +47,8 @@
           </li>
         </ul>
       </div>
+
+      <div class="col-3"></div>
     </nav>
     <!--FINAL NAVBAR-->
 
