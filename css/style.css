@@ -5,6 +5,7 @@
   --branco: #ffffff;
   --cinza: #f5f6f7;
   --radius: 1rem;
+  --radius-sm: .5rem;
   --regular: 400;
   --medium: 500;
   --semibold: 600;
@@ -81,6 +82,15 @@ h1 {
 
 h2 {
   font-weight: var(--semibold);
+}
+
+h3 {
+  font-weight: var(--semibold);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: var(--medium);
 }
 
 html {
@@ -293,6 +303,35 @@ nav {
   font-weight: bold;
 }
 
+#page-index .banner h1 {
+  margin-top: 2rem;
+}
+#page-index .card {
+  background: var(--primaria-dark);
+}
+#page-index .card h5 {
+  font-weight: var(--semibold);
+  margin-bottom: 1.5rem;
+}
+#page-index .card .card-text {
+  min-height: 120px;
+}
+#page-index .card .card-body .btn {
+  font-weight: var(--semibold);
+  border: 2px solid var(--primaria-light);
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: 0.3s ease-in-out;
+}
+#page-index .card:hover .card-body .btn {
+  background: var(--primaria-regular);
+  border-color: var(--primaria-regular);
+  transition: 0.3s ease-in-out;
+}
+
 .badge-primary {
   background-color: var(--primaria-regular);
 }
@@ -307,10 +346,21 @@ nav {
   border: #242a50;
 }
 
+#page-dashboard .content {
+  padding-bottom: 80px;
+}
+#page-dashboard .content p {
+  line-height: 1.75;
+}
 #page-dashboard .content h2 {
   padding-top: 3rem;
   margin-bottom: 0.5rem;
 }
 #page-dashboard .content h3 {
   padding-top: 1.5rem;
+}
+#page-dashboard .content .topico-situacao {
+  display: block;
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
 }/*# sourceMappingURL=style.css.map */
