@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html id="page-dashboard">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccessFast</title>
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body class="fix-nav-top">
+     <!--INICIO NAVBAR-->
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <a class="navbar-brand col-lg-3" href="index.html">
+        <img src="./img/logo.svg" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Início <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="minimo1-1.html">Nível Mínimo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nível Básico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nível Avançado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tabelota.html">Tabelota</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3"></div>
+    </nav>
+
+    <div class="menu-lateral">
+      <ul>
+          <li class="modulo">Perceptível</li>
+          <li><a href="minimo1-1.html">Alternativas em texto</a></li>
+          <li><a href="minimo1-3.html">Informações e Relações</a></li>
+      </ul>
+      <ul>
+        <li class="modulo">Operável</li>
+        <li><a href="#">Link de Ação 1</a></li>
+      </ul>
+      <ul>
+        <li class="modulo">Compreensível</li>
+        <li><a href="#">Link de Ação 1</a></li>
+      </ul>
+      <ul>
+        <li class="modulo">Robusto</li>
+        <li><a class="selecionado" href="minimo4-1.html">Nome, Função e Valor</a></li>
+      </ul>
+  </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 content">
+          <div class="mt-5 mb-4">
+            <h1 id="topo">4.1.2 Nome, Função, Valor</h1>
+            <span>Última atualização: 24 de dezembro de 2022</span>
+          </div>
+          <div>
+            <h2 id="definicao">Definição</h2>
+            <p>
+              Para todos os componentes de interface de usuário (incluindo, mas não se limitando a: elementos de formulário, links e componentes gerados por scripts), o nome e a função podem ser determinados por meio de código de programação; os estados, as propriedades e os valores, que possam ser definidos pelo usuário, podem ser definidos por meio de código de programação; e a notificação sobre alterações destes itens está disponível para os agentes de usuário, incluindo as tecnologias assistivas.
+            </p>
+
+            <p>
+              <strong>Nota</strong><br />
+              Este critério de sucesso destina-se, essencialmente, a autores da Web que desenvolvem ou criam os seus próprios componentes de interface de usuário. Por exemplo, os controles HTML normais já cumprem este critério de sucesso quando utilizados de acordo com a especificação.            </p>
+          <div>
+            <h2 id="intencao" class="mt-3 mb-4">Intenção</h2>
+            <p>
+              A intenção deste Critério de Sucesso é garantir que as Tecnologias Assistivas (AT) possam coletar informações sobre, ativar (ou definir) e manter-se atualizado sobre o status dos controles da interface do usuário no conteúdo.            </p>
+            <p>
+              Quando controles padrão de tecnologias acessíveis são usados, esse processo é direto. Se os elementos da interface do usuário forem usados ​​de acordo com a especificação, as condições desta disposição serão atendidas. (Ver exemplos do Critério de Sucesso 4.1.2 abaixo)
+            </p>
+            <p>Sinais auditivos também podem ser usados. Por exemplo, um carrilhão pode indicar o início de uma nova seção; uma mudança no tom de voz ou velocidade da fala pode ser usada para enfatizar informações importantes ou para indicar o texto citado; etc.</p>
+            <p>No entanto, se controles personalizados forem criados ou elementos de interface forem programados (em código ou script) para ter um papel e/ou função diferente do normal, medidas adicionais precisam ser tomadas para garantir que os controles forneçam informações importantes para tecnologias assistivas e permitem-se ser controlados por tecnologias assistivas.</p>
+            <p>Um estado particularmente importante de um controle de interface do usuário é se ele tem ou não foco. O estado de foco de um controle pode ser determinado programaticamente e notificações sobre mudança de foco são enviadas para agentes de usuário e tecnologia assistiva. Outros exemplos de estado de controle da interface do usuário são se uma caixa de seleção ou botão de opção foi selecionado ou não, ou se uma árvore recolhível ou nó de lista foi expandido ou recolhido.</p>
+
+            <p>
+              <strong>Observação</strong><br />
+              O Critério de Sucesso 4.1.2 requer um nome determinável programaticamente para todos os componentes da interface do usuário. Os nomes podem ser visíveis ou invisíveis. Ocasionalmente, o nome deve estar visível, caso em que é identificado como um rótulo. Consulte a definição de nome e rótulo no glossário para obter mais informações.
+            </p>
+
+            <h2 id="beneficios" class="mt-3 mb-4">Benefícios</h2>
+            <div class="d-flex">
+              <img
+                src="img/icon-terminal.png"
+                alt="mostrando como colocar alt nas imagens"
+                class="mb-5 img-fluid mr-3"
+              />
+              <p>
+                Fornecer informações de função, estado e valor em todos os componentes da interface do usuário permite a compatibilidade com tecnologia assistiva, como leitores de tela, ampliadores de tela e software de reconhecimento de fala, usados ​​por pessoas com deficiências.
+              </p>
+            </div>
+
+          <h2 id="exemplos">Exemplos</h2>
+          <h3>1. APIs acessíveis</h3>
+          <p>
+            Um applet Java usa a API de acessibilidade definida pela linguagem.
+            Recursos Relacionados
+          </p>
+          <img
+              src="img/img-default.png"
+              alt="mostrando como colocar alt nas imagens"
+              class="mb-5 img-fluid"
+            />
+
+
+            
+          <h2 id="tecnicas">Técnicas</h2>
+          <p>Cada item numerado nesta seção representa uma técnica ou combinação de técnicas que o Grupo de Trabalho WCAG considera suficiente para atender a este Critério de Sucesso. No entanto, não é necessário usar essas técnicas específicas. Para obter informações sobre o uso de outras técnicas, consulte Compreendendo as técnicas dos critérios de sucesso WCAG, particularmente a seção "Outras técnicas".</p>
+
+          <h3>Técnicas suficientes</h3>
+          <p>Selecione a situação abaixo que corresponde ao seu conteúdo. Cada situação inclui técnicas ou combinações de técnicas que são conhecidas e documentadas como sendo suficientes para aquela situação.</p>
+
+          <p>
+            <span class="topico-situacao">Situação A: Se estiver usando um componente de interface de usuário padrão em uma linguagem de marcação (por exemplo, HTML):</span><br />
+
+            ARIA14: Usando aria-label para fornecer um rótulo invisível onde um rótulo visível não pode ser usado<br />
+            ARIA16: Usando aria-labelledby para fornecer um nome para os controles da interface do usuário<br /><br />
+
+            G108: Usar recursos de marcação para expor o nome e a função, permitir que as propriedades configuráveis ​​pelo usuário sejam definidas diretamente e fornecer notificação de alterações usando técnicas específicas de tecnologia abaixo:<br />
+            • H91: Usando controles e links de formulário HTML
+            • H44: Uso de elementos de rótulo para associar rótulos de texto a controles de formulário
+            • H64: Usando o atributo title do elemento iframe
+            • H65: Uso do atributo title para identificar controles de formulário quando o elemento label não pode ser utilizado
+            • H88: Usando HTML de acordo com as especificações
+          </p>
+
+          <p>
+            <span class="topico-situacao">Situação B: Se estiver usando script ou código para redirecionar um componente de interface de usuário padrão em uma linguagem de marcação:</span><br />
+
+            Expondo os nomes e as funções, permitindo que as propriedades configuráveis ​​pelo usuário sejam definidas diretamente e fornecendo notificação de alterações usando uma das seguintes técnicas:<br />
+            ARIA16: Usando aria-labelledby para fornecer um nome para os controles da interface do usuário
+          </p>
+
+          <p>
+            <span class="topico-situacao">Situação C: Se estiver usando um componente de interface de usuário padrão em uma tecnologia de programação:</span><br />
+
+            G135: Usar os recursos da API de acessibilidade de uma tecnologia para expor nomes e notificar alterações usando as técnicas específicas da tecnologia abaixo:<br />
+            • PDF10: fornecendo rótulos para controles de formulário interativos em documentos PDF<br />
+            • PDF12: fornecendo nome, função e informações de valor para campos de formulário em documentos PDF
+          </p>
+
+          <p>
+            <span class="topico-situacao">Situação D: Se estiver criando seu próprio componente de interface de usuário em uma linguagem de programação:</span><br />
+
+            G10: Criar componentes usando uma tecnologia que suporte a notificação de acessibilidade de alterações usando as técnicas específicas da tecnologia abaixo:<br />
+            • ARIA4: Usando uma função WAI-ARIA para expor a função de um componente de interface do usuário<br />
+            • ARIA5: Usando o estado WAI-ARIA e os atributos de propriedade para expor o estado de um componente da interface do usuário<br />
+            • ARIA16: Usando aria-labelledby para fornecer um nome para os controles da interface do usuário
+          </p>
+
+          <h2 id="formas-de-implementacao">Formas de Implementação</h2>
+          <p>
+            As formas de se atingir os critérios de sucesso são diversas e
+            variam de acordo com o contexto e as características do seu projeto.
+            Para te ajudar durante o desenvolvimento das suas interfaces,
+            selecione qual tipo de situação mais se adequa ao seu projeto.
+          </p>
+          <p>
+            Você poderá gerar uma documentação contendo todas as informações
+            sobre as técnicas, de todos os critérios que você escolher
+            implementar em suas telas, para te guiar com mais facilidade durante
+            o andamento do projeto.
+          </p>
+          <div class="cards">
+            <div class="card mb-4 mt-5">
+              <div class="card-body d-flex">
+                <div class="mr-3">
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <h5 class="card-title">Situação A</h5>
+                  <p class="card-text">
+                    Para descrições que podem apresentar as mesmas informações
+                    que o conteúdo não textual e servir ao mesmo propósito.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body d-flex">
+                <div class="mr-3">
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <h5 class="card-title">Situação B</h5>
+                  <p class="card-text">
+                    Para descrições que não podem apresentar as mesmas informações que o conteúdo não textual e servir ao mesmo propósito.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body d-flex">
+                <div class="mr-3">
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <h5 class="card-title">Situação C</h5>
+                  <p class="card-text">
+                    Para conteúdo não textual que for um controle ou aceitar a entrada do usuário.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body d-flex">
+                <div class="mr-3">
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <h5 class="card-title">Situação D</h5>
+                  <p class="card-text">
+                    Para conteúdo não textual que for um controle ou aceitar a entrada do usuário.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body d-flex">
+                <div class="mr-3">
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <h5 class="card-title">Situação E</h5>
+                  <p class="card-text">
+                    Para conteúdo não textual que é CAPTCHA                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-body d-flex">
+                <div class="mr-3">
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <h5 class="card-title">Situação F</h5>
+                  <p class="card-text">
+                    Para conteúdos não textuais que devem ser ignoradas pelas tecnologias assistivas                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <h2 id="falhas">Falhas</h2>
+          <p>
+            A seguir estão erros comuns que são considerados falhas deste Critério de Sucesso pelo Grupo de Trabalho WCAG:<br /><br />
+
+            F59: Falha no Critério de Sucesso 4.1.2 devido ao uso de script para fazer div ou expandir um controle de interface do usuário em HTML sem fornecer uma função para o controle<br />
+            F15: Falha no Critério de Sucesso 4.1.2 devido à implementação de controles personalizados que não usam uma API de acessibilidade para a tecnologia ou o fazem de forma incompleta<br />
+            F20: Falha do Critério de Sucesso 1.1.1 e 4.1.2 devido à não atualização de alternativas de texto quando ocorrem alterações em conteúdo não textual<br />
+            F68: Falha do Critério de Sucesso 4.1.2 devido a um controle de interface do usuário não ter um nome determinado programaticamente<br />
+            F79: Falha do Critério de Sucesso 4.1.2 devido ao estado de foco de um componente de interface do usuário não ser determinável programaticamente ou nenhuma notificação de mudança de estado de foco disponível<br />
+            F86: Falha no Critério de Sucesso 4.1.2 devido ao não fornecimento de nomes para cada parte de um campo de formulário com várias partes, como um número de telefone dos EUA<br />
+            F89: Falha nos Critérios de Sucesso 2.4.4, 2.4.9 e 4.1.2 devido ao não fornecimento de um nome acessível para uma imagem que é o único conteúdo em um link
+          </p>
+          
+          <h2 id="outros-recursos">Outros recursos</h2>
+          <p>
+            Os recursos são apenas para fins informativos, sem endosso implícito:<br />
+            • Roteiro de Conteúdo da Web Acessível Dinâmico<br />
+            • Taxonomia de papéis para aplicativos adaptáveis ​​acessíveis<br />
+            • Módulo de Estados e Propriedades Adaptáveis<br />
+            • Acessibilidade ativa da Microsoft, versão 2.0
+          </p>
+          
+          <h2 id="creditos">Créditos</h2>
+          <p>
+            O conteúdo desta página foi originalmente desenvolvido pelos participantes do Grupo de Trabalho de Diretrizes de Acessibilidade (AG WG) como parte dos projetos WAI-Core financiados por fundos federais dos EUA.<br /><br />
+            A interface do usuário e a tradução livre do conteúdo foram feitas pelos alunos: Lucas Almeida, Mayara Viana, Milena Ferreira, Roberta Manfredini e Paulo Serpa, na disciplina de Acessibilidade Digital, ministrada pelo Prof. Dr. Edson Rufino de Souza</p>
+
+        </div>
+
+        <div class="col-3">
+          <div class="sumario">
+            <ul>
+                <li class="modulo"><h3>Nesta página:</h3></li>
+                <li><a href="#topo">Início</a></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

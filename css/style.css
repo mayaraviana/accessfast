@@ -193,19 +193,17 @@ nav {
 .menu-lateral ul li {
   margin: 0.25rem 0;
 }
-.menu-lateral ul li:not(.modulo) {
-  padding-left: 1rem;
-}
-.menu-lateral ul li.modulo a {
+.menu-lateral ul li.modulo {
   font-weight: bold;
-  color: var(--primaria-light);
+  color: rgba(255, 255, 255, 0.94);
   font-size: 1.125rem;
+  margin-bottom: 0.5rem;
 }
 .menu-lateral ul li a {
   display: block;
   color: var(--primaria-light);
   padding: 0.25rem 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 .menu-lateral ul li a:hover {
@@ -213,7 +211,8 @@ nav {
   transition: 0.3s ease;
 }
 .menu-lateral ul li a.selecionado {
-  color: var(--primaria-light);
+  color: var(--branco);
+  text-decoration: underline;
   font-weight: bold;
 }
 .menu-lateral::-webkit-scrollbar {
@@ -292,7 +291,7 @@ nav {
 .sumario ul li a {
   font-weight: 400;
   color: var(--primaria-regular);
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 .sumario ul li a:hover {
   color: var(--primaria-regular);

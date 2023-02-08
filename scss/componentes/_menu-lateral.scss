@@ -38,25 +38,25 @@
       li {
       margin: 0.25rem 0;
 
-      &:not(.modulo){ padding-left: 1rem;}
-
-          &.modulo a{
+          &.modulo{
               font-weight: bold;
-              color: var(--primaria-light);
+              color: rgba(255,255,255,.94);
               font-size: 1.125rem;
+              margin-bottom: .5rem;
           }
 
           a{  
               display: block;
               color: var(--primaria-light);
               padding: 0.25rem 0;
-              font-size: 1rem;
+              font-size: .875rem;
               font-weight: 500;
 
               &:hover{ color: var(--primaria-light); transition: .3s ease;}
 
               &.selecionado{
-                  color: var(--primaria-light);
+                  color: var(--branco);
+                  text-decoration: underline;
                   font-weight: bold;
               }
           }
