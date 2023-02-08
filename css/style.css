@@ -1,26 +1,288 @@
+:root {
+  --primaria-dark: #10163A;
+  --primaria-regular: #30365A;
+  --primaria-light: #DFE7F8;
+  --branco: #ffffff;
+  --cinza: #f5f6f7;
+  --radius: 1rem;
+}
+
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-sans-v14-latin-regular.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ibm-plex-sans-v14-latin-italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ibm-plex-sans-v14-latin-500.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-500.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/ibm-plex-sans-v14-latin-500italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-500italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-sans-v14-latin-600.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-600.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-sans-v14-latin-600italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-600italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-sans-v14-latin-700.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ibm-plex-sans-v14-latin-700italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans-v14-latin-700italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
 nav {
-  background-color: #30365a;
+  background-color: var(--primaria-regular);
+}
+
+.fix-nav-top {
+  margin-top: 64px;
 }
 
 .card-inicio {
-  background-color: #30365a;
+  padding: 1.5rem 0;
+  border-radius: var(--radius);
+  background-color: var(--primaria-regular);
 }
+
 .card-inicio a {
-  color: white;
+  color: var(--branco);
 }
+
 .card-inicio a:hover {
-  color: white;
+  color: var(--branco);
 }
+
+.menu-lateral {
+  z-index: 2;
+  height: calc(100% - 64.4px);
+  top: 64px;
+  width: 216px;
+  padding: 1.5rem;
+  position: fixed;
+  background: var(--primaria-dark);
+  overflow-y: auto;
+  border-right: 2px solid var(--primaria-regular);
+}
+@media screen and (max-width: 1200px) {
+  .menu-lateral {
+    display: none;
+  }
+}
+.menu-lateral > ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.js .menu-lateral {
+  visibility: hidden;
+  left: -216px;
+  transition: 0.3s ease;
+}
+.js .menu-lateral.aberto {
+  visibility: visible;
+  left: 0;
+  transition: 0.5s ease;
+}
+.menu-lateral ul {
+  display: block;
+  margin-bottom: 2rem;
+}
+.menu-lateral ul li {
+  margin: 0.25rem 0;
+}
+.menu-lateral ul li:not(.modulo) {
+  padding-left: 1rem;
+}
+.menu-lateral ul li.modulo a {
+  font-weight: bold;
+  color: var(--primaria-light);
+  font-size: 1.125rem;
+}
+.menu-lateral ul li a {
+  display: block;
+  color: var(--primaria-light);
+  padding: 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.menu-lateral ul li a:hover {
+  color: var(--primaria-light);
+  transition: 0.3s ease;
+}
+.menu-lateral ul li a.selecionado {
+  color: var(--primaria-light);
+  font-weight: bold;
+}
+.menu-lateral::-webkit-scrollbar {
+  padding: 0.25rem 0.25rem 0;
+  width: 6px;
+  height: 6px;
+}
+.menu-lateral::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.menu-lateral::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.24);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.menu-lateral::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.48);
+}
+.menu-lateral::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.48);
+}
+.menu-lateral::-webkit-scrollbar-track {
+  background: var(--primaria-regular);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.menu-lateral::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.sumario {
+  z-index: 2;
+  height: calc(100% - 64.4px);
+  top: 64px;
+  width: 216px;
+  padding: 1.5rem;
+  position: fixed;
+  right: 0;
+  background: var(--cinza);
+  overflow-y: auto;
+}
+@media screen and (max-width: 1200px) {
+  .sumario {
+    display: none;
+  }
+}
+.sumario > ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.js .sumario {
+  visibility: hidden;
+  left: -216px;
+  transition: 0.3s ease;
+}
+.js .sumario.aberto {
+  visibility: visible;
+  left: 0;
+  transition: 0.5s ease;
+}
+.sumario ul {
+  display: block;
+  margin-bottom: 2rem;
+}
+.sumario ul li {
+  margin: 0.25rem 0;
+  padding: 0.125rem 0;
+}
+.sumario ul li h3 {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--primaria-light);
+}
+.sumario ul li a {
+  font-weight: 400;
+  color: var(--primaria-regular);
+  font-size: 1rem;
+}
+.sumario ul li a:hover {
+  color: var(--primaria-regular);
+  transition: 0.3s ease;
+}
+.sumario ul li a.selecionado {
+  color: var(--primaria-light);
+  font-weight: bold;
+}
+.sumario::-webkit-scrollbar {
+  padding: 0.25rem 0.25rem 0;
+  width: 6px;
+  height: 6px;
+}
+.sumario::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.sumario::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.24);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.sumario::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.48);
+}
+.sumario::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.48);
+}
+.sumario::-webkit-scrollbar-track {
+  background: var(--primaria-regular);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+.sumario::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .badge-primary {
-  background-color: #30365a;
+  background-color: var(--primaria-regular);
 }
 
 .btn-primary {
-  background-color: #30365a;
-  border: #30365a;
+  background-color: var(--primaria-regular);
+  border: var(--primaria-regular);
 }
 
 .btn-primary:hover {
   background-color: #242a50;
   border: #242a50;
-}
+}/*# sourceMappingURL=style.css.map */
